@@ -1,14 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Project Management</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-    <button class="btn">hey</button>
-</body>
-<script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="project-container">
+      <h1 class="container-title">your projects</h1>
+      <ul>
+        <li class="tasks">
+          <div class="todoList-container">
+            <div class="svg-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#D0D5DD"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle"
+              >
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <div class="title_subtitle">
+                <p class="title">design homepage layout</p>
+                <p class="subtitle">homepage layout for abc company</p>
+              </div>
+            </div>
+            <div class="priorityLevel">priority</div>
+          </div>
+        </li>
+        <li class="tasks">
+          <div class="todoList-container">
+            <div class="svg-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#D0D5DD"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle"
+              >
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <div class="title_subtitle">
+                <p class="title">make components</p>
+                <p class="subtitle">make components for abc company</p>
+              </div>
+            </div>
+            <div class="priorityLevel">priority</div>
+          </div>
+        </li>
+        <li class="tasks">
+          <div class="todoList-container">
+            <div class="svg-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#D0D5DD"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle"
+              >
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <div class="title_subtitle">
+                <p class="title">make footer</p>
+                <p class="subtitle">change footer for saas</p>
+              </div>
+            </div>
+            <div class="priorityLevel">priority</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="specific-details-card">
+      <h1>design homepage layout</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
+        alias eum voluptatibus pariatur numquam expedita sed delectus suscipit
+        eos, dolores, placeat iste ducimus repellat dignissimos minima sapiente
+        tempora? Quibusdam, architecto?
+      </p>
+    </div>
+    <div>
+      <form
+        action="
+        "
+        class="form"
+      >
+        <label for="form-title">project title</label>
+        <input type="text" name="title" id="form-title" required />
+        <label for="form-subtitle">project subTitle</label>
+        <input type="text" name="title" id="form-subtitle" required />
+        <div>
+          <input type="radio" id="priority" name="priorityType" />
+          <label for="priority">priority</label>
+          <input type="radio" id="low-priority" name="priorityType" />
+          <label for="low-priority">low-priority</label>
+        </div>
+        <button class="formButton">Add task</button>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

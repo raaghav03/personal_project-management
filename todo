@@ -1,0 +1,16 @@
+Static Project Listing
+
+Display a list of predefined projects in the sidebar. This will later evolve into a dynamic list that users can add to or modify.
+
+Project Selection Handling
+Implement functionality so that when a user clicks on a project name in the sidebar, the main content area updates to show that project's details. Initially, this can simply display the project name or a placeholder message like "Project details displayed here"
+
+Task Addition Mechanism
+Add a button or form input in the project details area to allow users to type in a task name and submit it. For Day 1, this can result in console logging the input task name or displaying it as a list item within the project details area.
+
+Real-time Clock or Timer
+Utilize setInterval to implement a continuously updating clock or timer displayed prominently in the application, such as in the header or sidebar. This feature is intended to familiarize you with using time-based events.
+
+Basic Event Listeners for Interactivity
+Ensure that clicking on project names in the sidebar triggers the content update in the main area.
+Make the task addition mechanism (button click or form submission) interactive, capturing user input and displaying it in the console or UI.
