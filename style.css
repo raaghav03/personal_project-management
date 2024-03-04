@@ -4,8 +4,8 @@
   padding: 1.5rem;
   flex-direction: column;
   border-radius: 0.5rem;
-  border: 1px solid rgba(228, 228, 228, 0.5);
-  width: fit-content;
+  border: 1px solid rgba(228,  228, 228, 0.5);
+  width: 32rem;
 }
 body {
   padding: 4rem;
@@ -64,19 +64,25 @@ ul {
   line-height: normal;
 }
 
-.svg-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+.specific-details-card >h2{
+  color: #979797;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
 }
+
+
 
 .todoListContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: auto;
   width: 100%;
+
 }
 
 .priorityLevel {
@@ -94,6 +100,8 @@ ul {
   line-height: normal;
 }
 
+
+
 .specific-details-card {
   border-radius: 0.5rem;
   border: 1px solid rgba(228, 228, 228, 0.5);
@@ -106,13 +114,16 @@ ul {
   margin-top: 2rem;
   align-self: center;
 }
-
+.tasks{
+  width: 100%;
+}
 .specific-details-card > h1 {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   font-family: Inter;
+  margin: 0;
 }
 
 .addTask {
