@@ -17,7 +17,7 @@
       <h1 class="container-title">your projects</h1>
       <ul>
         <li class="tasks">
-          <div class="todoList-container">
+          <div class="todoListContainer">
             <div class="svg-container">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@
           </div>
         </li>
         <li class="tasks">
-          <div class="todoList-container">
+          <div class="todoListContainer">
             <div class="svg-container">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@
           </div>
         </li>
         <li class="tasks">
-          <div class="todoList-container">
+          <div class="todoListContainer">
             <div class="svg-container">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -102,25 +102,39 @@
         tempora? Quibusdam, architecto?
       </p>
     </div>
-    <div>
-      <form
-        action="
-        "
-        class="form"
-      >
-        <label for="form-title">project title</label>
-        <input type="text" name="title" id="form-title" required />
-        <label for="form-subtitle">project subTitle</label>
-        <input type="text" name="title" id="form-subtitle" required />
-        <div>
-          <input type="radio" id="priority" name="priorityType" />
-          <label for="priority">priority</label>
-          <input type="radio" id="low-priority" name="priorityType" />
-          <label for="low-priority">low-priority</label>
-        </div>
-        <button class="formButton">Add task</button>
-      </form>
-    </div>
+    <form action="">
+      <div style="gap: 2rem; display: flex; margin-bottom: 1rem">
+        <label for="projectTitle" style="font-family: Inter"
+          >Project Title</label
+        >
+        <input
+          type="text"
+          placeholder="Enter Project Title"
+          name="projectTitle"
+          id="projectTitle"
+        />
+      </div>
+      <div style="gap: 2rem; display: flex; margin-bottom: 1rem">
+        <label for="projectSubtitle" style="font-family: Inter"
+          >Project Subtitle</label
+        >
+        <input
+          type="text"
+          placeholder="Enter Project Subtitle"
+          name="projectSubtitle"
+          id="projectSubtitle"
+        />
+      </div>
+      <div style="gap: 2rem; display: flex; margin-bottom: 1rem">
+        <input type="radio" name="priorityLevel" id="high" value="high" />
+        <label for="high">High priority</label>
+      </div>
+      <div style="gap: 2rem; display: flex">
+        <input type="radio" name="priorityLevel" id="low" value="low" />
+        <label for="low">Low priority</label>
+      </div>
+      <button class="addTask">Add Task</button>
+    </form>
   </body>
   <script src="script.js"></script>
 </html>

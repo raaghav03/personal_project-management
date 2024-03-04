@@ -71,7 +71,7 @@ ul {
   gap: 1rem;
 }
 
-.todoList-container {
+.todoListContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,4 +138,5 @@ ul {
   font-weight: 700;
   line-height: 140%; /* 1.575rem */
   text-transform: capitalize;
+  margin-top: 2rem;
 }
