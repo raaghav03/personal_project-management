@@ -13,7 +13,83 @@
     />
   </head>
   <body>
-    <div class="project-container">
+    <nav class="sidebar">
+      <div class="project-name-div">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="29"
+          height="48"
+          viewBox="0 0 29 48"
+          fill="none"
+        >
+          <rect y="19.2" width="9.59998" height="9.59999" fill="#039855" />
+          <rect
+            x="28.8"
+            y="28.8"
+            width="9.6"
+            height="9.59999"
+            transform="rotate(180 28.8 28.8)"
+            fill="#027A48"
+          />
+          <path
+            d="M9.59998 19.2001L19.2 9.6001V19.2001L9.59998 28.8001V19.2001Z"
+            fill="#A6F4C5"
+          />
+          <path
+            d="M19.2 28.7999L9.59997 38.3999L9.59997 28.7999L19.2 19.1999L19.2 28.7999Z"
+            fill="#6CE9A6"
+          />
+          <path d="M0 19.2L19.2 0V9.59999L9.59998 19.2H0Z" fill="#32D583" />
+          <path
+            d="M28.7999 28.8L9.59995 48L9.59995 38.4L19.1999 28.8L28.7999 28.8Z"
+            fill="#12B76A"
+          />
+        </svg>
+        <p class="project-name">Task Management</p>
+      </div>
+      <div class="line"></div>
+      <div class="navbar-item">
+        <div class="navbar-item-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 20  20 "
+            fill="none"
+          >
+            <path
+              d="M12.5 17.4983V13.3317C12.5 11.951 11.3807 10.8317 10 10.8317C8.61929 10.8317 7.5 11.951 7.5 13.3317V17.4983M12.5 17.4983C14.1472 17.497 15.0107 17.4761 15.68 17.1351C16.3072 16.8155 16.8171 16.3055 17.1367 15.6783C17.5 14.9653 17.5 14.0319 17.5 12.165V10.6306C17.5 9.78321 17.5 9.3595 17.4011 8.96262C17.3135 8.61082 17.169 8.27567 16.9734 7.97038C16.7528 7.62598 16.4447 7.33506 15.8287 6.75321L13.662 4.70691C12.3732 3.48976 11.7289 2.88118 10.9938 2.65158C10.3467 2.44947 9.65333 2.44947 9.00623 2.65158C8.27114 2.88118 7.62676 3.48976 6.33801 4.70691L4.17134 6.75321C3.55527 7.33506 3.24723 7.62598 3.02659 7.97038C2.83101 8.27567 2.68654 8.61082 2.59889 8.96262C2.5 9.3595 2.5 9.78321 2.5 10.6306V12.165C2.5 14.0319 2.5 14.9653 2.86331 15.6783C3.18289 16.3055 3.69282 16.8155 4.32003 17.1351C4.98931 17.4761 5.85275 17.497 7.5 17.4983M12.5 17.4983C10.8333 17.4996 9.16666 17.4996 7.5 17.4983"
+              stroke="#989898"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="navbar-item-text">Home</div>
+      </div>
+      <div class="navbar-item">
+        <div class="navbar-item-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <path
+              d="M2.51941 9.96728C2.7117 11.858 4.30856 13.3333 6.25 13.3333H13.75C15.6914 13.3333 17.2883 11.858 17.4806 9.96728M2.51941 9.96728C2.5 10.4119 2.5 10.9584 2.5 11.6667C2.5 13.2177 2.5 13.9933 2.70393 14.6209C3.11609 15.8894 4.1106 16.8839 5.3791 17.2961C6.00673 17.5 6.78227 17.5 8.33333 17.5H11.6667C13.2177 17.5 13.9933 17.5 14.6209 17.2961C15.8894 16.8839 16.8839 15.8894 17.2961 14.6209C17.5 13.9933 17.5 13.2177 17.5 11.6667C17.5 10.9584 17.5 10.4119 17.4806 9.96728M2.51941 9.96728C2.54252 9.43819 2.59312 9.05348 2.70393 8.71243C3.11609 7.44394 4.1106 6.44942 5.3791 6.03726C5.72713 5.92418 6.12065 5.8738 6.66667 5.85136M17.4806 9.96728C17.4575 9.43819 17.4069 9.05348 17.2961 8.71243C16.8839 7.44394 15.8894 6.44942 14.6209 6.03726C14.2729 5.92418 13.8794 5.8738 13.3333 5.85136M13.3333 5.85136V5.83333C13.3333 5.05836 13.3333 4.67087 13.2481 4.35295C13.017 3.49022 12.3431 2.81635 11.4804 2.58519C11.1625 2.5 10.775 2.5 10 2.5C9.22502 2.5 8.83754 2.5 8.51962 2.58519C7.65689 2.81635 6.98302 3.49022 6.75185 4.35295C6.66667 4.67087 6.66667 5.05836 6.66667 5.83333V5.85136M13.3333 5.85136C12.8947 5.83333 12.3576 5.83333 11.6667 5.83333H8.33333C7.64237 5.83333 7.10531 5.83333 6.66667 5.85136M10 12.5V13.3333V14.1667"
+              stroke="#989898"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="navbar-item-text">Projects</div>
+      </div>
+    </nav>
+    <!-- <div class="project-container">
       <h1 class="container-title">your projects</h1>
       <ul>
         <li class="tasks">
@@ -23,7 +99,7 @@
               <p class="subtitle">homepage layout for abc company</p>
             </div>
 
-            <div class="priorityLevel">high</div>
+            <div class="priorityLevelHigh">high</div>
           </div>
         </li>
         <li class="tasks">
@@ -32,7 +108,7 @@
               <p class="title">make components</p>
               <p class="subtitle">make components for abc company</p>
             </div>
-            <div class="priorityLevel">low</div>
+            <div class="priorityLevelLow">low</div>
           </div>
         </li>
         <li class="tasks">
@@ -42,7 +118,7 @@
               <p class="subtitle">change footer for saas</p>
             </div>
 
-            <div class="priorityLevel">high</div>
+            <div class="priorityLevelHigh">high</div>
           </div>
         </li>
       </ul>
@@ -58,7 +134,7 @@
         tempora? Quibusdam, architecto?
       </p>
     </div>
-    <form action="">
+    <form action="" style="margin: 50%;">
       <div style="gap: 2rem; display: flex; margin-bottom: 1rem">
         <label for="projectTitle" style="font-family: Inter"
           >Project Title</label
@@ -92,7 +168,7 @@
         <label for="low">Low priority</label>
       </div>
       <button class="addTask">Add Task</button>
-    </form>
+    </form> -->
   </body>
   <script src="script.js"></script>
 </html>

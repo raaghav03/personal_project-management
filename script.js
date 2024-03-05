@@ -50,9 +50,18 @@ addTask.addEventListener("click", function (event) {
   const pSubtitle = document.createElement("p");
   pSubtitle.className = "subtitle";
   pSubtitle.textContent = subtitle;
+  document.querySelectorAll(".priorityLevel").forEach((div) => {
+    if (div.textContent === "high") {
+      div.className = "priorityLevelHigh";
+    } else {
+      div.className = "priorityLevelLow";
+    }
+  });
 
   const priorityDiv = document.createElement("div");
-  priorityDiv.className = "priorityLevel";
+  priority == "high"
+    ? (priorityDiv.className = "priorityLevelHigh")
+    : (priorityDiv.className = "priorityLevelLow");
   priorityDiv.textContent = priority.replace("-", " ");
 
   titleSubtitle.appendChild(pTitle);
