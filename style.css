@@ -97,11 +97,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-ul>li{
-  
-}
+
 .main-content{
-margin-left: 20;
+margin-left: 10%;
 
 }
 .footerParent {

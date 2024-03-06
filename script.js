@@ -4,6 +4,39 @@
 // project due date
 // project description
 // proejct todo object
+
+let projects = [];
+function addProject(name, priorityLevel, dueDate, description, todos) {
+  return {
+    name: name,
+    priorityLevel: priorityLevel,
+    dueDate: dueDate,
+    description: description,
+    todo: todos,
+  };
+}
+
+let todosForNewProject = [
+  {
+    name: "Design UI",
+    date: "12/03/24",
+  },
+  {
+    name: "Design UI2",
+    date: "13/03/24",
+  },
+];
+
+let newProject = addProject(
+  "New Web App",
+  "Medium",
+  "2023-06-30",
+  "Build a new web application.",
+  todosForNewProject
+);
+
+projects.push(newProject)
+console.log(projects);
 let allProjects = [
   {
     name: "Make Components For Website",
@@ -65,16 +98,13 @@ clickedLi.forEach((li) => {
 });
 
 const ul = document.querySelector("ul");
-console.log(allProjects);
+
 for (let i = 0; i < allProjects.length; i++) {
   const element = document.createElement("li");
   element.textContent = allProjects[i].name;
   ul.appendChild(element);
   ul.className = "project-names";
 }
-
-
-
 
 // const ul = document.querySelector("ul");
 // ul.addEventListener("click", function (event) {
@@ -110,12 +140,11 @@ addTask.addEventListener("click", function (event) {
       priority = radio.value; // Make sure to get the value of the radio
     }
   });
-  
-  const li=document.createElement('li');
-  ul.appendChild(li)
-  li.textContent=title;
-  // Create the task elements
 
+  const li = document.createElement("li");
+  ul.appendChild(li);
+  li.textContent = title;
+  // Create the task elements
 
   // const todoListContainer = document.createElement("div");
   // todoListContainer.className = "todoListContainer";
