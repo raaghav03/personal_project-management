@@ -1,5 +1,58 @@
-const clickedLi = document.querySelectorAll("li");
+// project data to represent
+// project name
+// project priority
+// project due date
+// project description
+// proejct todo object
+let allProjects = [
+  {
+    name: "Make Components For Website",
+    priorityLevel: "High",
+    dueDate: "6 March 2024",
+    description:
+      "The components have to be made for an Australia based startup. The problem statement is to design something fun and Gen-Z.",
+    todos: [
+      { name: "Make login form for the website", date: "20th March" },
+      {
+        name: "Make stylised components to maintain consistency",
+        date: "12th March",
+      },
+      { name: "Make login form for the website", fdate: "24th March" },
+    ],
+  },
+  {
+    name: "Design Homepage Layout",
+    priorityLevel: "High",
+    dueDate: "6 March 2024",
+    description:
+      "The components have to be made for an Australia based startup. The problem statement is to design something fun and Gen-Z.",
+    todos: [
+      { name: "Make login form for the website", date: "20th March" },
+      {
+        name: "Make stylised components to maintain consistency",
+        date: "12th March",
+      },
+      { name: "Make login form for the website", fdate: "24th March" },
+    ],
+  },
+  {
+    name: "E-Commerce Software App Design",
+    priorityLevel: "High",
+    dueDate: "6 March 2024",
+    description:
+      "The components have to be made for an Australia based startup. The problem statement is to design something fun and Gen-Z.",
+    todos: [
+      { name: "Make login form for the website", date: "20th March" },
+      {
+        name: "Make stylised components to maintain consistency",
+        date: "12th March",
+      },
+      { name: "Make login form for the website", fdate: "24th March" },
+    ],
+  },
+];
 
+const clickedLi = document.querySelectorAll("li");
 
 clickedLi.forEach((li) => {
   li.addEventListener("click", function () {
@@ -10,6 +63,18 @@ clickedLi.forEach((li) => {
     h1.textContent = text;
   });
 });
+
+const ul = document.querySelector("ul");
+console.log(allProjects);
+for (let i = 0; i < allProjects.length; i++) {
+  const element = document.createElement("li");
+  element.textContent = allProjects[i].name;
+  ul.appendChild(element);
+  ul.className = "project-names";
+}
+
+
+
 
 // const ul = document.querySelector("ul");
 // ul.addEventListener("click", function (event) {
@@ -31,65 +96,67 @@ clickedLi.forEach((li) => {
 //   }
 // });
 
-// const addTask = document.querySelector(".addTask");
+const addTask = document.querySelector(".addTask");
 
-// addTask.addEventListener("click", function (event) {
-//   event.preventDefault();
-//   // Retrieve input values
-//   const title = document.getElementById("projectTitle").value;
-//   const subtitle = document.getElementById("projectSubtitle").value;
-//   let priority;
-//   const radios = document.querySelectorAll('input[name="priorityLevel"]');
-//   radios.forEach((radio) => {
-//     if (radio.checked) {
-//       priority = radio.value; // Make sure to get the value of the radio
-//     }
-//   });
+addTask.addEventListener("click", function (event) {
+  event.preventDefault();
+  // Retrieve input values
+  const title = document.getElementById("projectTitle").value;
+  const subtitle = document.getElementById("projectSubtitle").value;
+  let priority;
+  const radios = document.querySelectorAll('input[name="priorityLevel"]');
+  radios.forEach((radio) => {
+    if (radio.checked) {
+      priority = radio.value; // Make sure to get the value of the radio
+    }
+  });
+  
+  const li=document.createElement('li');
+  ul.appendChild(li)
+  li.textContent=title;
+  // Create the task elements
 
-//   // Create the task elements
-//   const li = document.createElement("li");
-//   li.className = "tasks";
 
-//   const todoListContainer = document.createElement("div");
-//   todoListContainer.className = "todoListContainer";
+  // const todoListContainer = document.createElement("div");
+  // todoListContainer.className = "todoListContainer";
 
-//   const titleSubtitle = document.createElement("div");
-//   titleSubtitle.className = "title_subtitle";
+  // const titleSubtitle = document.createElement("div");
+  // titleSubtitle.className = "title_subtitle";
 
-//   const pTitle = document.createElement("p");
-//   pTitle.className = "title";
-//   pTitle.textContent = title;
+  // const pTitle = document.createElement("p");
+  // pTitle.className = "title";
+  // pTitle.textContent = title;
 
-//   const pSubtitle = document.createElement("p");
-//   pSubtitle.className = "subtitle";
-//   pSubtitle.textContent = subtitle;
-//   document.querySelectorAll(".priorityLevel").forEach((div) => {
-//     if (div.textContent === "high") {
-//       div.className = "priorityLevelHigh";
-//     } else {
-//       div.className = "priorityLevelLow";
-//     }
-//   });
+  // const pSubtitle = document.createElement("p");
+  // pSubtitle.className = "subtitle";
+  // pSubtitle.textContent = subtitle;
+  // document.querySelectorAll(".priorityLevel").forEach((div) => {
+  //   if (div.textContent === "high") {
+  //     div.className = "priorityLevelHigh";
+  //   } else {
+  //     div.className = "priorityLevelLow";
+  //   }
+  // });
 
-//   const priorityDiv = document.createElement("div");
-//   priority == "high"
-//     ? (priorityDiv.className = "priorityLevelHigh")
-//     : (priorityDiv.className = "priorityLevelLow");
-//   priorityDiv.textContent = priority.replace("-", " ");
+  // const priorityDiv = document.createElement("div");
+  // priority == "high"
+  //   ? (priorityDiv.className = "priorityLevelHigh")
+  //   : (priorityDiv.className = "priorityLevelLow");
+  // priorityDiv.textContent = priority.replace("-", " ");
 
-//   titleSubtitle.appendChild(pTitle);
-//   titleSubtitle.appendChild(pSubtitle);
-//   todoListContainer.appendChild(titleSubtitle);
+  // titleSubtitle.appendChild(pTitle);
+  // titleSubtitle.appendChild(pSubtitle);
+  // todoListContainer.appendChild(titleSubtitle);
 
-//   todoListContainer.appendChild(priorityDiv);
+  // todoListContainer.appendChild(priorityDiv);
 
-//   li.appendChild(todoListContainer);
+  // li.appendChild(todoListContainer);
 
-//   // Append the new task to the project container
-//   ul.appendChild(li);
+  // // Append the new task to the project container
+  // ul.appendChild(li);
 
-//   // Optional: Clear form fields after adding the task
-//   document.getElementById("projectTitle").value = "";
-//   document.getElementById("projectSubtitle").value = "";
-//   radios.forEach((radio) => (radio.checked = false));
-// });
+  // // Optional: Clear form fields after adding the task
+  // document.getElementById("projectTitle").value = "";
+  // document.getElementById("projectSubtitle").value = "";
+  // radios.forEach((radio) => (radio.checked = false));
+});

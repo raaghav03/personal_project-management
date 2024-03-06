@@ -110,12 +110,8 @@
                   />
                 </svg>
               </div>
-              <ul >
-                <li><a href="javascript:void(0);">Design Homepage Layout</a></li>
-                <li><a href="javascript:void(0);">Make Components for Website</a></li>
-                <li><a href="javascript:void(0);">E-Commerce Software app</a></li>
-                
-            </ul>
+              <ul>
+              </ul>
             </div>
           </div>
         </div>
@@ -167,7 +163,7 @@
             delectus suscipit eos, dolores, placeat iste ducimus repellat
             dignissimos minima sapiente tempora? Quibusdam, architecto?
           </p>
-        </div>
+        </div>-->
         <form action="">
           <div style="gap: 2rem; display: flex; margin-bottom: 1rem">
             <label for="projectTitle" style="font-family: Inter"
@@ -193,16 +189,27 @@
               required
             />
           </div>
-          <div style="gap: 2rem; display: flex; margin-bottom: 1rem">
-            <input type="radio" name="priorityLevel" id="high" value="high" />
-            <label for="high">High priority</label>
+          <div style="display: flex; align-items: center; gap: 2rem">
+            <label for="description" style="font-family: Inter"
+              >Project Description</label
+            >
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+            ></textarea>
           </div>
-          <div style="gap: 2rem; display: flex">
+          <div style="gap: 1.5rem; display: flex; margin-bottom: 1rem">
+            <input type="radio" name="priorityLevel" id="high" value="high" />
+            <label for="high" style="font-family: Inter">High priority</label>
+          </div>
+          <div style="gap: 1.5rem; display: flex">
             <input type="radio" name="priorityLevel" id="low" value="low" />
-            <label for="low">Low priority</label>
+            <label for="low" style="font-family: Inter">Low priority</label>
           </div>
           <button class="addTask">Add Task</button>
-        </form> -->
+        </form>
       </div>
     </div>
   </body>
