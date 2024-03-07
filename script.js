@@ -34,58 +34,30 @@ let newProject = addProject(
   "Build a new web application.",
   todosForNewProject
 );
+let newProject2 = addProject(
+  "ABC",
+  "Hard",
+  "2023-06-311110",
+  "totoott",
+  todosForNewProject
+);
 
 projects.push(newProject)
-console.log(projects);
-let allProjects = [
-  {
-    name: "Make Components For Website",
-    priorityLevel: "High",
-    dueDate: "6 March 2024",
-    description:
-      "The components have to be made for an Australia based startup. The problem statement is to design something fun and Gen-Z.",
-    todos: [
-      { name: "Make login form for the website", date: "20th March" },
-      {
-        name: "Make stylised components to maintain consistency",
-        date: "12th March",
-      },
-      { name: "Make login form for the website", fdate: "24th March" },
-    ],
-  },
-  {
-    name: "Design Homepage Layout",
-    priorityLevel: "High",
-    dueDate: "6 March 2024",
-    description:
-      "The components have to be made for an Australia based startup. The problem statement is to design something fun and Gen-Z.",
-    todos: [
-      { name: "Make login form for the website", date: "20th March" },
-      {
-        name: "Make stylised components to maintain consistency",
-        date: "12th March",
-      },
-      { name: "Make login form for the website", fdate: "24th March" },
-    ],
-  },
-  {
-    name: "E-Commerce Software App Design",
-    priorityLevel: "High",
-    dueDate: "6 March 2024",
-    description:
-      "The components have to be made for an Australia based startup. The problem statement is to design something fun and Gen-Z.",
-    todos: [
-      { name: "Make login form for the website", date: "20th March" },
-      {
-        name: "Make stylised components to maintain consistency",
-        date: "12th March",
-      },
-      { name: "Make login form for the website", fdate: "24th March" },
-    ],
-  },
-];
+projects.push(newProject2)
+// console.log(projects);
+const ul = document.querySelector("ul");
 
-const clickedLi = document.querySelectorAll("li");
+for (let i = 0; i < projects.length; i++) {
+  const element = document.createElement("li");
+  element.textContent = projects[i].name;
+  ul.appendChild(element);
+  element.className = "project-names";
+}
+const h1 = document.getElementsByClassName("main-content-h1")[0];
+h1.textContent=projects[0].name;
+
+const clickedLi=document.querySelectorAll(".project-names");
+console.log(clickedLi);
 
 clickedLi.forEach((li) => {
   li.addEventListener("click", function () {
@@ -97,14 +69,11 @@ clickedLi.forEach((li) => {
   });
 });
 
-const ul = document.querySelector("ul");
 
-for (let i = 0; i < allProjects.length; i++) {
-  const element = document.createElement("li");
-  element.textContent = allProjects[i].name;
-  ul.appendChild(element);
-  ul.className = "project-names";
-}
+
+
+
+
 
 // const ul = document.querySelector("ul");
 // ul.addEventListener("click", function (event) {
